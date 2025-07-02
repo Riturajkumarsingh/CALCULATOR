@@ -7,43 +7,68 @@
     <title>Calculator Made by Rituraj Kumar Singh </title>
   </head>
   <body>
+    <header class="main-header">
+      <h1>AI Scientific Calculator</h1>
+      <p class="subtitle">Smart, Fast &amp; Powerful | By Rituraj Kumar Singh</p>
+    </header>
     <div class="container">
       <div class="calculator">
         <input type="text" id="inputBox" placeholder="0" />
-        <div>
+        <button id="micBtn" title="Speak your calculation" class="mic-btn">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
+            <circle cx="12" cy="12" r="10" fill="#00e6fe" opacity="0.15"/>
+            <path d="M12 17V21M8 21H16M12 17C14.2091 17 16 15.2091 16 13V7C16 4.79086 14.2091 3 12 3C9.79086 3 8 4.79086 8 7V13C8 15.2091 9.79086 17 12 17Z" stroke="#00e6fe" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>
+        <div id="voiceStatus" class="voice-status"></div>
+        <div class="buttons">
+          <!-- Scientific Row 1 -->
+          <button class="button scientific">sin</button>
+          <button class="button scientific">cos</button>
+          <button class="button scientific">tan</button>
+          <button class="button scientific">ln</button>
+          <button class="button scientific">log</button>
+          <!-- Scientific Row 2 -->
+          <button class="button scientific">√</button>
+          <button class="button scientific">^</button>
+          <button class="button scientific">π</button>
+          <button class="button scientific">e</button>
+          <button class="button special">(</button>
+          <button class="button special">)</button>
           <button class="button operator">AC</button>
           <button class="button operator">DEL</button>
           <button class="button operator">%</button>
           <button class="button operator">/</button>
-        </div>
-        <div>
+          <!-- Row 3 -->
           <button class="button">7</button>
           <button class="button">8</button>
           <button class="button">9</button>
           <button class="button operator">*</button>
-        </div>
-        <div>
+          <button class="button scientific">exp</button>
+          <!-- Row 4 -->
           <button class="button">4</button>
           <button class="button">5</button>
           <button class="button">6</button>
           <button class="button operator">-</button>
-        </div>
-        <div>
+          <button class="button scientific">abs</button>
+          <!-- Row 5 -->
           <button class="button">1</button>
           <button class="button">2</button>
           <button class="button">3</button>
           <button class="button operator">+</button>
-        </div>
-
-        <div>
+          <button class="button scientific">!</button>
+          <!-- Row 6 -->
           <button class="button">00</button>
           <button class="button">0</button>
           <button class="button">.</button>
           <button class="button equalBtn">=</button>
+          <button class="button special">Ans</button>
         </div>
       </div>
     </div>
-
+    <footer class="main-footer">
+      <span>Made with <span style="color:#fb7c14;">&#10084;</span> | <a href="https://github.com/" target="_blank" rel="noopener" style="color:#6dee0a;text-decoration:none;">GitHub</a></span>
+    </footer>
     <script src="script.js"></script>
   </body>
 </html>
